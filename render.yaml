@@ -1,0 +1,19 @@
+services:
+  - type: static-site
+    name: interview-ready-engineer
+    runtime: static
+    repo: https://github.com/YOUR_USERNAME/interview-ready-engineer
+    branch: main
+    buildCommand: npm install && npm run build
+    publishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+    headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
