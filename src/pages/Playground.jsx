@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Play, RotateCcw, Terminal, Database, Server, ArrowRight, Download } from 'lucide-react';
+import { Play, RotateCcw, Terminal, Database, Server } from 'lucide-react';
 
 export default function Playground() {
   const [tab, setTab] = useState('java');

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Routes, Route, NavLink, useNavigate } from 'react-router-dom';
-import { Sun, Moon, Menu, X, GraduationCap, Home, LayoutDashboard, BookOpen, Code, MessageSquare, Target, Briefcase, ClipboardList } from 'lucide-react';
+import { Routes, Route, NavLink, Navigate } from 'react-router-dom';
+import { Sun, Moon, Menu, X, GraduationCap, LayoutDashboard, BookOpen, Code, MessageSquare, Target, Briefcase, ClipboardList } from 'lucide-react';
 import HomePage from './pages/Home';
 import AssessmentPage from './pages/Assessment';
 import DashboardPage from './pages/Dashboard';
@@ -25,15 +25,15 @@ export default function App() {
   const toggleTheme = () => setTheme(t => t === 'dark' ? 'light' : 'dark');
 
   const navLinks = [
-    { to: '/', label: 'Home', icon: Home },
-    { to: '/assessment', label: 'Assessment', icon: ClipboardList },
-    { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { to: '/courses', label: 'Courses', icon: BookOpen },
-    { to: '/roadmap', label: 'Roadmap', icon: Target },
-    { to: '/playground', label: 'Playground', icon: Code },
-    { to: '/interview', label: 'Interview', icon: Briefcase },
-    { to: '/tutor', label: 'AI Tutor', icon: MessageSquare },
-    { to: '/projects', label: 'Projects', icon: GraduationCap },
+    { to: '/', label: 'Home' },
+    { to: '/assessment', label: 'Assessment' },
+    { to: '/dashboard', label: 'Dashboard' },
+    { to: '/courses', label: 'Courses' },
+    { to: '/roadmap', label: 'Roadmap' },
+    { to: '/playground', label: 'Playground' },
+    { to: '/interview', label: 'Interview' },
+    { to: '/tutor', label: 'AI Tutor' },
+    { to: '/projects', label: 'Projects' },
   ];
 
   return (
@@ -79,6 +79,7 @@ export default function App() {
           <Route path="/interview" element={<InterviewPage />} />
           <Route path="/tutor" element={<TutorPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </div>
