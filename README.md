@@ -49,21 +49,58 @@ Welcome, **Temporal Engineer**! You are now part of the **Time Variance Authorit
 
 - **Spam commits** (empty or meaningless changes) – these are **time criminals**.
 - **Direct pushes to `main`** – only the **Time-Keepers** may touch the sacred branch.
-- **Large, unstructured PRs** – break them into smaller, logical chunks like a well-ordered timeline.
-- **Ignoring the code of conduct** – we are a **TV**A, not a **T**oxic **V**ariance **A**gency.
-
-### 🤖 Automation (The Time-Keepers' Tools)
-
-We use:
-- **GitHub Actions** to run lint and tests automatically on every PR.
-- **Dependabot** to keep dependencies fresh – because outdated packages are **temporal decay**.
-- **Conventional Commits** for changelog generation – the **Time-Twister** loves a tidy history.
-
-### 📜 Final Warning
-
-Remember: **All timelines converge here.** Your contribution, no matter how small, affects the fabric of this project. Make it worthy of the **Sacred Timeline**.
-
-Now go forth, Temporal Engineer. **For All Time. Always.**
+- **Large, unstructured P
 
 ---
-*This section was drafted by the TVA Temporal Engineering Department. Any unauthorized editing will be reported to the Time-Keepers.*
+
+## 🏷️ Project Badges
+
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
+
+---
+
+## 🚀 Quick Start
+
+Get your local timeline up and running in three steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/shubhyagami/study.git
+
+# Enter the project directory
+cd study
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`. For production build, run `npm run build`.
+
+---
+
+## 📅 Changelog — 2026-07-27
+
+- **Initial setup**: React + Vite project scaffolded with HMR and ESLint.
+- **TVA Guidelines**: Added the sacred contributing process for temporal engineers.
+- **Project badges**: Added badges for React, Vite, JavaScript, license, and PRs.
+- **Quick Start**: Added step-by-step instructions to run the project locally.
+- **Motivational quote**: Added a time‑themed quote to inspire study sessions.
+
+---
+
+## 💡 Motivational Quote
+
+> *"The only way to do great work is to love what you do."*  
+> — Steve Jobs
+
+> *"Time is what we want most, but what we use worst."*  
+> — William Penn
+
+Study is not just about notes — it's about mastering the timeline of knowledge. Every minute you invest here is a branch toward a better future. Stay focused, Temporal Engineer. The Sacred Timeline depends on you.
