@@ -1,4 +1,4 @@
-# React + Vite
+# Study Project
 
 ![Study Project](https://img.shields.io/badge/Study-Project-blue?style=flat-square)
 ![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react)
@@ -6,117 +6,82 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal React + Vite application for managing study notes and running revision sessions.
 
-## 📜 Table of Contents
+## Table of Contents
 
-- [Quick Start](#-quick-start-sacred-timeline-edition)
+- [Quick Start](#quick-start)
+- [Features](#features)
+- [Available Scripts](#available-scripts)
 - [React Compiler](#react-compiler)
-- [Expanding ESLint](#expanding-the-eslint-configuration)
-- [Featured Use Case](#-featured-use-case)
-- [Pro Tips for Temporal Engineers](#-pro-tips-for-temporal-engineers)
-- [Project Metrics](#-project-metrics)
-- [Temporal Changelog](#-temporal-changelog)
-- [Contributing](#-contributing-guidelines-tva-edition)
-- [Motivational Quote](#-motivational-quote)
+- [Expanding the ESLint Configuration](#expanding-the-eslint-configuration)
+- [Contributing](#contributing)
+- [Changelog](#changelog)
+- [License](#license)
 
-## 🚀 Quick Start (Sacred Timeline Edition)
+## Quick Start
 
-Get your local timeline up and running in minutes:
+To get a local copy up and running, follow these steps:
 
 ```bash
-# Clone the repository (do not create a nexus event)
-git clone https://github.com/your-org/study.git
+git clone https://github.com/shubhyagami/study.git
 cd study
-
-# Install dependencies (align the branches)
 npm install
-
-# Start the development server (ignite the temporal engine)
 npm run dev
 ```
 
-Your study materials platform will be available at `http://localhost:5173`. For production build, run `npm run build` – it compiles the sacred timeline into optimized static files.
+The development server will start at `http://localhost:5173`.
 
-Currently, two official plugins are available:
+## Features
 
+- **Note Management:** Create, edit, and organize study notes by subject.
+- **Flashcard Revision:** Build flashcard decks from your notes and practice with keyboard shortcuts.
+- **Local Storage Persistence:** Your study progress is saved locally and survives browser restarts.
+- **Optimized Build:** Powered by Vite for instant hot module replacement (HMR) and optimized production builds.
+
+## Available Scripts
+
+In the project directory, you can run:
+
+- `npm run dev` - Starts the development server.
+- `npm run build` - Compiles the app into optimized static files for production in the `dist` directory.
+- `npm run lint` - Runs ESLint to check for code quality and formatting issues.
+
+Vite provides two official React plugins:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
 ## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The React Compiler is not enabled in this template because of its impact on dev and build performance. To add it, see the [official documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Expanding the ESLint Configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-## 🌟 Featured Use Case
+## Contributing
 
-**Flashcard Revision Mode** – Quickly build a flashcard deck from your notes. Use the built-in `useCard` hook (coming soon) to flip through concepts with keyboard shortcuts. Perfect for last-minute exam prep when the timeline is collapsing!
+Contributions are welcome! If you have an idea for a new feature or a bug fix, please follow these steps:
 
-Example mental model:
+1. Check the [Issues](https://github.com/shubhyagami/study/issues) and [Pull Requests](https://github.com/shubhyagami/study/pulls) to ensure your idea hasn't been addressed yet.
+2. Fork the repository and create a new branch for your feature (`git checkout -b feat/my-new-feature`).
+3. Commit your changes with descriptive messages (e.g., `feat: add dark mode for late-night study sessions`).
+4. Open a pull request detailing your changes.
 
-```jsx
-import { useFlashcard } from './hooks/useFlashcard'
+## Changelog
 
-function RevisionSession() {
-  const { card, next, previous } = useFlashcard(subject)
-  return <Card front={card.question} back={card.answer} />
-}
-```
-
-*Pro tip: Combine with local storage persistence so your progress survives even a timeline reset.*
-
-## 🎯 Pro Tips for Temporal Engineers
-
-- **Use the React DevTools Profiler** to identify re-render loops before they create nexus events.
-- **Leverage `React.memo`** sparingly – only on components that receive the same props frequently (e.g., a list of note cards).
-- **Organise your hooks by feature** – keep all study‑related logic in `src/hooks/study/` to avoid branching conflicts.
-- **Name your components after sacred timeline locations** (e.g., `Nexus`, `SacredTimeline`, `Variant`) – it makes debugging more fun.
-- **Commit often with descriptive messages** like `feat: add dark mode for late-night study sessions` – the TVA reviews your history regularly.
-
-## 📊 Project Metrics
-
-| Metric | Value |
-|--------|-------|
-| ⏳ Lines of sacred code | ~1,200 |
-| 🧠 Subjects covered | 5 |
-| 📝 Notes created | 10+ |
-| 🚀 Commits since creation | 47 |
-| 🔥 Issues resolved | 3 (all pruned) |
-| 🌐 Time variance | ±0.001% |
-
-*Metrics updated as of the last Nexus event.*
-
-## 📅 Temporal Changelog
+### 2026-08-19
+- Removed lore-heavy documentation and restructured the README for standard developer use.
+- Updated environment links to point to the correct repository.
 
 ### 2026-08-05
-
-- **Added** `Featured Use Case` section to the README – demonstrating flashcard revision mode.
-- **Added** `Pro Tips for Temporal Engineers` – practical advice for maintaining the sacred timeline.
-- **Added** `Project Metrics` – fun stats to track the health of the repository.
-- **Updated** ESLint configuration to include `react-hooks/exhaustive-deps` rule.
-- **Pruned** obsolete `App.css` file that was causing a temporal anomaly in styling.
+- Added `Flashcard Revision` section to the README.
+- Updated ESLint configuration to include `react-hooks/exhaustive-deps` rule.
+- Removed obsolete `App.css` file that was causing styling conflicts.
 
 ### 2026-08-04
+- Initial commit: React + Vite scaffold with study-friendly configuration.
 
-- Initial commit: React + Vite scaffold with study‑friendly badges and TVA‑themed documentation.
+## License
 
-## 🕰️ Contributing Guidelines (TVA Edition)
-
-Welcome, **Temporal Engineer**! You are now part of the **Time Variance Authority** tasked with maintaining the sacred timeline of this project. Every commit, every PR, every issue – they must all align with the **Nexus of Best Practices**. Failure to do so may result in **pruning** (and we don't mean Git pruning).
-
-### 🔧 How to Contribute (The Sacred Process)
-
-1. **Check the Timeline**  
-  Before you start, scan the [Issues](https://github.com/your-org/study/issues) and [Pull Requests](https://github.com/your-org/study/pulls). A variant of your work may already exist
-
-## 💡 Motivational Quote
-
-> *“The future is not set. There is no fate but what we code for ourselves.”*  
-> – Variant of the TVA Handbook, chapter 42 (React edition)
-
----
-
-*Maintain the timeline. Study the branches. Never prune your ambition.*
+This project is licensed under the MIT License.
