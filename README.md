@@ -19,8 +19,8 @@ A minimal React and Vite application streamlines your study experience. Manage, 
 * [Features](#features)
 * [Scripts](#scripts)
 * [Contributing](#contributing)
-* [Changelog](#changelog)
 * [License](#license)
+* [Changelog](#changelog)
 
 ## Getting Started
 -------------
@@ -32,40 +32,47 @@ To start using this project, follow these simple steps:
 3. Install the dependencies with `npm install`
 4. Start the development server using `npm run dev`
 
-The application will now be available at `http://localhost:5173`. You can begin creating and managing your study notes.
+The application will now be available at `http://localhost:5173`. Begin creating and managing your study notes.
+
+### Quick Tips
+
+- Use `npm run dev` for a hot-reloading development server.
+- Run `npm run build` to compile the app into optimized static files for production.
+- Use `npm run lint` to catch any code quality issues.
 
 ## Features
 ------------
 
-* **Note Management:** Create, edit, and organize study notes by subject.
-* **Flashcard Revision:** Build flashcard decks from your notes and practice with ease.
-* **Local Storage:** Study progress is saved locally, persisting across browser restarts.
-* **Fast Development and Deployment:** Powered by Vite for instant Hot Module Replacement (HMR) and optimized production builds.
+### Key Benefits
+
+* **Note Management**: Effortlessly create, edit, and organize study notes by subject.
+* **Flashcard Revision**: Build flashcard decks from your notes and practice with ease.
+* **Local Storage**: Study progress is saved locally, persisting across browser restarts.
 
 ## Scripts
 ------------
 
-To run essential commands in the project directory:
+### Essential Commands
 
-* `npm run dev` - Starts the development server
-* `npm run build` - Compiles the app into optimized static files for production in the `dist` directory
-* `npm run lint` - Runs ESLint to check for code quality and formatting issues
+* `npm run dev` - Starts the development server.
+* `npm run build` - Compiles the app for optimized production.
+* `npm run lint` - Runs ESLint for code quality checks.
 
 ## Contributing
 ------------
 
 We welcome new contributors! If you have a feature idea or a bug fix, please follow these steps:
 
-1. Check the [Issues](https://github.com/shubhyagami/study/issues) and [Pull Requests](https://github.com/shubhyagami/study/pulls) for existing solutions
-2. Fork the repository, create a new branch for your feature (`git checkout -b feat/my-new-feature`)
-3. Commit your changes with descriptive messages (e.g., `feat: add dark mode for late-night study sessions`)
-4. Open a pull request detailing your changes
+1. Check the [Issues](https://github.com/shubhyagami/study/issues) for existing solutions.
+2. Fork the repository and create a new branch for your feature (`git checkout -b feat/my-new-feature`).
+3. Commit your changes with descriptive messages (e.g., `feat: add dark mode for late-night study sessions`).
+4. Open a pull request detailing your changes.
 
 ## Changelog
 ------------
 
-* **2026-08-19:** Restructured the README for improved readability and added a features section
-* **2026-08-05:** Added the Flashcard Revision feature and removed the App.css file
+* **2026-08-19**: Restructured the README for improved readability.
+* **2026-08-05**: Introduced the Flashcard Revision feature.
 
 ## License
 ------------
