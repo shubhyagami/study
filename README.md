@@ -31,9 +31,9 @@ A minimal React and Vite setup that lets you:
 ---
 
 ## Features
-- **Note Management** – organize notes with titles, subjects, and tags.
-- **Flashcard Revision** – convert notes into study decks and track mastery.
-- **Local Persistence** – notes and flashcards are saved locally, no backend required.
+- **Note Management** – organize notes with titles, subjects, and tags.  
+- **Flashcard Revision** – convert notes into study decks and track mastery.  
+- **Local Persistence** – notes and flashcards are saved locally, no backend required.  
 - **Hot‑reload Development** – instant feedback while you work.
 
 ---
@@ -41,7 +41,7 @@ A minimal React and Vite setup that lets you:
 ## Getting Started
 
 ### Prerequisites
-- Node.js (v18 or later)
+- Node.js (v18 or later)  
 - npm (v9 or later)
 
 ### Installation
@@ -72,20 +72,20 @@ Checks code quality with ESLint.
 ---
 
 ## Development Scripts
-| Command                | Description                              |
-|------------------------|------------------------------------------|
-| `npm run dev`          | Starts the development server with hot reload |
-| `npm run build`        | Produces an optimized production build    |
-| `npm run lint`         | Runs ESLint to enforce code standards     |
+| Command          | Description                                 |
+|------------------|---------------------------------------------|
+| `npm run dev`    | Starts the development server with hot reload |
+| `npm run build`  | Produces an optimized production build       |
+| `npm run lint`   | Runs ESLint to enforce code standards        |
 
 ---
 
 ## Contributing
 Contributions are welcome! To get started:
 
-1. Fork the repository and create a feature branch (`git checkout -b feat/your-feature`).
-2. Make changes with clear, descriptive commit messages.
-3. Ensure the app runs (`npm run dev`) and passes linting (`npm run lint`).
+1. Fork the repository and create a feature branch (`git checkout -b feat/your-feature`).  
+2. Make changes with clear, descriptive commit messages.  
+3. Ensure the app runs (`npm run dev`) and passes linting (`npm run lint`).  
 4. Open a pull request describing the change.
 
 Please review existing issues first to avoid duplicate work.
@@ -93,8 +93,8 @@ Please review existing issues first to avoid duplicate work.
 ---
 
 ## Changelog
-- **2026-08-19**: Refined README and added clear contribution workflow.
-- **2026-08-05**: Added Flashcard Revision feature with local persistence.
+- **2026‑08‑19**: Refined README and clarified contribution workflow.  
+- **2026‑08‑05**: Added Flashcard Revision feature with local persistence.  
 
 ---
 
