@@ -3,38 +3,26 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)  
 ![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react)  
 ![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)  
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript)  
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)  
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
 A lightweight React + Vite application for organizing study notes and creating flashcard decks. All data is stored locally, so your progress persists across sessions.
-
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Development Scripts](#development-scripts)
-- [Contributing](#contributing)
-- [Changelog](#changelog)
-- [License](#license)
 
 ---
 
 ## Overview
 A minimal React and Vite setup that lets you:
 
-- Create, edit, and categorize study notes by subject.
-- Generate flashcard decks from your notes for active recall.
+- Create, edit, and categorize study notes by subject.  
+- Convert notes into flashcard decks for active recall.  
 - Persist notes and revision progress in the browser’s local storage.
 
 ---
 
 ## Features
 - **Note Management** – organize notes with titles, subjects, and tags.  
-- **Flashcard Revision** – convert notes into study decks and track mastery.  
-- **Local Persistence** – notes and flashcards are saved locally, no backend required.  
-- **Hot‑reload Development** – instant feedback while you work.
+- **Flashcard Revision** – generate decks from notes and track mastery.  
+- **Local Persistence** – data is saved locally, no backend required.  
+- **Hot‑reload Development** – instant feedback while coding.
 
 ---
 
@@ -55,28 +43,28 @@ npm install
 ```bash
 npm run dev
 ```
-Open [http://localhost:5173](http://localhost:5173) in your browser to start taking notes.
+Open [http://localhost:5173](http://localhost:5173) to start taking notes.
 
 ### Build for Production
 ```bash
 npm run build
 ```
-The compiled static files will be placed in the `dist/` folder.
+The compiled static files are placed in the `dist/` directory.
 
 ### Linting
 ```bash
 npm run lint
 ```
-Checks code quality with ESLint.
+Runs ESLint to enforce code quality.
 
 ---
 
 ## Development Scripts
-| Command          | Description                                 |
-|------------------|---------------------------------------------|
-| `npm run dev`    | Starts the development server with hot reload |
-| `npm run build`  | Produces an optimized production build       |
-| `npm run lint`   | Runs ESLint to enforce code standards        |
+| Command     | Description                                        |
+|------------|----------------------------------------------------|
+| `npm run dev`    | Starts the development server with hot reload    |
+| `npm run build`  | Produces an optimized production build            |
+| `npm run lint`   | Runs ESLint to check code standards                |
 
 ---
 
@@ -93,8 +81,8 @@ Please review existing issues first to avoid duplicate work.
 ---
 
 ## Changelog
-- **2026‑08‑19**: Refined README and clarified contribution workflow.  
-- **2026‑08‑05**: Added Flashcard Revision feature with local persistence.  
+- **2026‑08‑19** – Refined README and clarified contribution workflow.  
+- **2026‑08‑05** – Added flashcard revision feature with local persistence.  
 
 ---
 
