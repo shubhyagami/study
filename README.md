@@ -1,12 +1,12 @@
 # Study
 
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
-![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react)
-![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript)
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)  
+![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react)  
+![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)  
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript)  
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)  
 
-A lightweight React + Vite application for organizing study notes and revising with flashcards. All data is stored locally, so your progress persists across sessions.
+A lightweight React + Vite application for organizing study notes and creating flashcard decks. All data is stored locally, so your progress persists across sessions.
 
 ---
 
