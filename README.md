@@ -5,87 +5,70 @@
 ![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)  
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
-A lightweight React + Vite app for organizing study notes, creating flashcard decks, and tracking revision progress—all stored locally in the browser.
+**Study** is a lightweight React + Vite app that helps you organize notes, generate flashcard decks, and track revision progress—all stored locally in the browser.
 
 ---
 
-## Overview
-Study is a minimal React and Vite setup that lets you:
+## Quick start
 
-* Create, edit, and categorize notes by subject and tag.  
-* Convert notes into flashcard decks for active recall.  
-* Persist notes and revision state in the browser’s local storage.  
-* Enjoy instant feedback during development with hot‑reload.
-
----
-
-## Features
-- **Note Management** – organize notes with titles, subjects, and tags.  
-- **Flashcard Revision** – generate decks from notes and monitor mastery.  
-- **Local Persistence** – data stays in the browser, no backend required.  
-- **Hot‑Reload Development** – immediate feedback while coding.  
-
----
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v18 or later)  
-- npm (v9 or later)
-
-### Installation
 ```bash
+# clone
 git clone https://github.com/shubhyagami/study.git
 cd study
 npm install
-```
 
-### Run the App
-```bash
-npm run dev
-```
-Open [http://localhost:5173](http://localhost:5173) to start taking notes.
+# development server
+npm run dev    # opens http://localhost:5173
 
-### Build for Production
-```bash
-npm run build
-```
-Compiled assets appear in the `dist/` folder.
+# build for production
+npm run build  # out in the dist/ folder
 
-### Linting
-```bash
+# lint
 npm run lint
 ```
-Runs ESLint to enforce code quality.
 
 ---
 
-## Development Scripts
-| Command     | Description                                        |
-|------------|----------------------------------------------------|
-| `npm run dev`    | Starts the development server with hot reload    |
-| `npm run build`  | Produces an optimized production build            |
-| `npm run lint`   | Runs ESLint to check code standards                |
+## Core features
+
+- **Note Management** – Create, edit, and categorize notes by subject and tag.  
+- **Flashcard Generation** – Turn notes into deck‑ready flashcards for active recall.  
+- **Progress Tracking** – Monitor mastery and revision schedule in real time.  
+- **Client‑side persistence** – All data lives in `localStorage`; no backend needed.  
+- **Hot‑reload development** – Instant feedback while you code.
+
+---
+
+## Development commands
+
+| Command        | Purpose |
+|----------------|----------|
+| `npm run dev`      | Start the Vite dev server with hot‑reloading |
+| `npm run build`    | Generate a production build in `dist/` |
+| `npm run lint`     | Run ESLint to enforce code style |
 
 ---
 
 ## Contributing
-Contributions are welcome. To get started:
 
-1. Fork the repository and create a feature branch (`git checkout -b feat/your-feature`).  
-2. Make changes with clear, descriptive commit messages.  
-3. Verify the app runs (`npm run dev`) and passes linting (`npm run lint`).  
-4. Open a pull request describing the change.
+We welcome contributions!  
+1. Fork the repo and create a feature branch (`git checkout -b feat/your-feature`).  
+2. Keep commits short, descriptive, and aligned with Git‑Flow conventions.  
+3. Run `npm run dev` to verify the app works locally.  
+4. Run `npm run lint` to make sure the code passes linting.  
+5. Open a pull request with a concise description and relevant issue links, if any.
 
 Please review existing issues first to avoid duplicate work.
 
 ---
 
-## Changelog
+## Changelog (recent)
+
 - **2026‑08‑19** – Refined README and clarified contribution workflow.  
 - **2026‑08‑05** – Added flashcard revision feature with local persistence.  
 
 ---
 
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+MIT license – see the [LICENSE](LICENSE) file for details.
