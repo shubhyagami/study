@@ -5,24 +5,25 @@
 ![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)  
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
-A lightweight React + Vite application for organizing study notes and creating flashcard decks. All data is stored locally, so your progress persists across sessions.
+A lightweight React + Vite app for organizing study notes, creating flashcard decks, and tracking revision progress—all stored locally in the browser.
 
 ---
 
 ## Overview
-A minimal React and Vite setup that lets you:
+Study is a minimal React and Vite setup that lets you:
 
-- Create, edit, and categorize study notes by subject.  
-- Convert notes into flashcard decks for active recall.  
-- Persist notes and revision progress in the browser’s local storage.
+* Create, edit, and categorize notes by subject and tag.  
+* Convert notes into flashcard decks for active recall.  
+* Persist notes and revision state in the browser’s local storage.  
+* Enjoy instant feedback during development with hot‑reload.
 
 ---
 
 ## Features
 - **Note Management** – organize notes with titles, subjects, and tags.  
-- **Flashcard Revision** – generate decks from notes and track mastery.  
-- **Local Persistence** – data is saved locally, no backend required.  
-- **Hot‑reload Development** – instant feedback while coding.
+- **Flashcard Revision** – generate decks from notes and monitor mastery.  
+- **Local Persistence** – data stays in the browser, no backend required.  
+- **Hot‑Reload Development** – immediate feedback while coding.  
 
 ---
 
@@ -49,7 +50,7 @@ Open [http://localhost:5173](http://localhost:5173) to start taking notes.
 ```bash
 npm run build
 ```
-The compiled static files are placed in the `dist/` directory.
+Compiled assets appear in the `dist/` folder.
 
 ### Linting
 ```bash
@@ -69,11 +70,11 @@ Runs ESLint to enforce code quality.
 ---
 
 ## Contributing
-Contributions are welcome! To get started:
+Contributions are welcome. To get started:
 
 1. Fork the repository and create a feature branch (`git checkout -b feat/your-feature`).  
 2. Make changes with clear, descriptive commit messages.  
-3. Ensure the app runs (`npm run dev`) and passes linting (`npm run lint`).  
+3. Verify the app runs (`npm run dev`) and passes linting (`npm run lint`).  
 4. Open a pull request describing the change.
 
 Please review existing issues first to avoid duplicate work.
