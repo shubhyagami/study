@@ -5,70 +5,80 @@
 ![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)  
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
-**Study** is a lightweight React + Vite app that helps you organize notes, generate flashcard decks, and track revision progress—all stored locally in the browser.
+**Study** is a lightweight React + Vite application that lets you
+
+* create, edit, and categorize notes
+* transform notes into flashcard decks for active recall
+* track revision progress and mastery levels
+
+Everything is stored client‑side in the browser, so no backend or server‑side code is required.
 
 ---
 
-## Quick start
+## Getting Started
 
 ```bash
-# clone
-git clone https://github.com/shubhyagami/study.git
-cd study
+# Clone the repository
+git clone https://github.com/shubhyagami/study.git && cd study
+
+# Install dependencies
 npm install
 
-# development server
-npm run dev    # opens http://localhost:5173
+# Run the development server
+npm run dev    # Opens http://localhost:5173
 
-# build for production
-npm run build  # out in the dist/ folder
+# Build for production
+npm run build  # Output is in the dist/ folder
 
-# lint
+# Run the linter
 npm run lint
 ```
 
 ---
 
-## Core features
+## Features
 
-- **Note Management** – Create, edit, and categorize notes by subject and tag.  
-- **Flashcard Generation** – Turn notes into deck‑ready flashcards for active recall.  
-- **Progress Tracking** – Monitor mastery and revision schedule in real time.  
-- **Client‑side persistence** – All data lives in `localStorage`; no backend needed.  
-- **Hot‑reload development** – Instant feedback while you code.
+| Feature | Description |
+|---------|-------------|
+| **Note Management** | Create, edit, delete, and tag notes by subject. |
+| **Flashcard Generation** | Convert notes into deck‑ready flashcards for spaced repetition. |
+| **Progress Tracking** | Visualize mastery and review schedules in real time. |
+| **Local Persistence** | All data lives in `localStorage`; no external services needed. |
+| **Hot‑Reload Development** | Immediate feedback while building. |
 
 ---
 
-## Development commands
+## Development
 
-| Command        | Purpose |
-|----------------|----------|
-| `npm run dev`      | Start the Vite dev server with hot‑reloading |
-| `npm run build`    | Generate a production build in `dist/` |
-| `npm run lint`     | Run ESLint to enforce code style |
+| Command | Purpose |
+|---------|---------|
+| `npm run dev`   | Start the Vite dev server with hot‑reloading |
+| `npm run build` | Generate a production build in `dist/` |
+| `npm run lint`  | Run ESLint to enforce code style |
 
 ---
 
 ## Contributing
 
-We welcome contributions!  
-1. Fork the repo and create a feature branch (`git checkout -b feat/your-feature`).  
-2. Keep commits short, descriptive, and aligned with Git‑Flow conventions.  
-3. Run `npm run dev` to verify the app works locally.  
-4. Run `npm run lint` to make sure the code passes linting.  
-5. Open a pull request with a concise description and relevant issue links, if any.
+We welcome contributions from everyone.
 
-Please review existing issues first to avoid duplicate work.
+1. Fork the repository and create a feature branch: `git checkout -b feat/your-feature`  
+2. Keep commits focused and use the **[Git‑Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)** naming convention.  
+3. Verify that the app runs locally with `npm run dev`.  
+4. Ensure the code passes linting: `npm run lint`.  
+5. Open a pull request with a clear description and link to an issue, if applicable.
+
+Check open issues first to avoid duplication.
 
 ---
 
-## Changelog (recent)
+## Recent Changes
 
 - **2026‑08‑19** – Refined README and clarified contribution workflow.  
-- **2026‑08‑05** – Added flashcard revision feature with local persistence.  
+- **2026‑08‑05** – Added flashcard revision feature with local persistence.
 
 ---
 
 ## License
 
-MIT license – see the [LICENSE](LICENSE) file for details.
+MIT – see the [LICENSE](LICENSE) file for details.
