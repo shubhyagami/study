@@ -5,7 +5,7 @@
 ![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react)  
 ![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)
 
-**Study** is a lightweight, browser‑only React app for taking notes, creating flashcard decks, and tracking revision progress. All data lives in `localStorage`, so no backend is required.
+**Study** is a browser‑only React app that lets you take notes, build flashcard decks, and track revision progress. All data is stored in `localStorage`, so the app works offline and requires no backend.
 
 ---
 
@@ -23,60 +23,59 @@
 
 ## Prerequisites
 
-- Node.js **18+** (recommended: use NVM – `nvm use` before installing dependencies)
+- Node.js **18+** (recommended: manage with NVM – `nvm use`)
 
 ---
 
 ## Getting Started
 
 ```bash
-# 1️⃣ Clone the repo
+# 1️⃣ Clone the repository
 git clone https://github.com/shubhyagami/study.git && cd study
 
 # 2️⃣ Install dependencies
 npm install
 
-# 3️⃣ Run the dev server
+# 3️⃣ Launch the dev server
 npm run dev
 
 # 4️⃣ Open http://localhost:5173 in your browser
 ```
 
-The app works out of the box. No additional configuration is needed.
+The application runs immediately – no additional configuration is required.
 
 ---
 
 ## Features
 
 | Feature | What you can do |
-|---|---|
-| **Note Management** | Create, edit, delete, and tag notes by subject |
-| **Flashcard Decks** | Convert any note into a deck for active recall |
-| **Revision Dashboard** | View mastery levels and suggested review schedules |
-| **Local Persistence** | All data is stored in `localStorage` |
-| **Fast Development** | Hot‑reloading via Vite |
+|---------|-----------------|
+| **Notes** | Create, edit, delete, and tag notes by subject |
+| **Flashcards** | Convert any note into a deck for active recall |
+| **Revision Tracker** | View mastery levels and receive suggested review schedules |
+| **Offline‑first** | All data persisted in `localStorage` |
+| **Fast dev** | Hot‑reloading with Vite |
 
 ---
 
 ## Development
 
 | Command | Purpose |
-|--------|---------|
-| `npm run dev` | Start Vite dev server (hot reload) |
+|---------|---------|
+| `npm run dev` | Start the Vite dev server (hot‑reload) |
 | `npm run build` | Build a production bundle in `dist/` |
-| `npm run lint` | Run ESLint for style consistency |
+| `npm run lint` | Run ESLint with the project’s rules |
 
 ---
 
 ## Contributing
 
-1. Fork the repo and create a feature branch (`git checkout -b feat/your-feature`).  
-2. Keep commits focused and follow Conventional Commit conventions.  
-3. Run `npm run dev` to test locally.  
-4. Run `npm run lint` to ensure style compliance.  
-5. Open a pull request with a concise description and reference any related issue.
+1. Fork the repository and create a feature branch (`git checkout -b feat/your-feature`).
+2. Make focused commits and follow the Conventional Commit convention.
+3. Test locally with `npm run dev` and run `npm run lint` before committing.
+4. Submit a pull request with a clear title and description, and reference any related issue.
 
-Always check existing issues before starting new work.
+Check the open issues before starting new work.
 
 ---
 
