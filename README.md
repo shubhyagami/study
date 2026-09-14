@@ -1,19 +1,22 @@
 # Study
 
+> A lightweight, browser‑only React note‑taking and flashcard app that works offline.
+
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)  
 ![Node.js](https://img.shields.io/badge/Node.js-18.x-brightgreen?style=flat-square&logo=node.js)  
 ![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react)  
 ![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)
 
-**Study** is a lightweight, browser‑only React app that lets you take notes, build flashcard decks, and track revision progress. All data is stored in `localStorage`, so the app works offline and requires no backend.
+> **All data is stored in `localStorage`.** No server is required, so the app is instantly usable on any device that supports modern browsers.
 
 ---
 
-## Table of Contents
+## Table of contents
 
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Quick start](#quick-start)
 - [Features](#features)
+- [Project structure](#project-structure)
 - [Development](#development)
 - [Contributing](#contributing)
 - [Changelog](#changelog)
@@ -21,68 +24,79 @@
 
 ---
 
-## Prerequisites
-
-- Node.js **18.x** or newer (recommended: manage with NVM – `nvm use`)
-
----
-
-## Getting Started
+## Installation
 
 ```bash
-# 1️⃣ Clone the repository
+# 1️⃣ Clone the repo
 git clone https://github.com/shubhyagami/study.git && cd study
 
 # 2️⃣ Install dependencies
 npm install
 
-# 3️⃣ Launch the dev server
+# 3️⃣ Run the development server
 npm run dev
-
-# 4️⃣ Open http://localhost:5173 in your browser
 ```
 
-The application starts immediately – no further configuration is required.
+Once the server starts, open <http://localhost:5173> in your browser. No further setup is required.
 
 ---
 
 ## Features
 
-| Feature           | What you can do |
-|--------------------|-----------------|
-| **Notes**          | Create, edit, delete, and tag notes by subject |
-| **Flashcards**    | Convert any note into a deck for active recall |
-| **Revision Tracker** | View mastery levels and receive suggested review schedules |
-| **Offline‑first** | All data persisted in `localStorage` |
-| **Fast dev workflow** | Hot‑reloading powered by Vite |
+| Feature | What it does |
+|---------|--------------|
+| **Notes** | Create, edit, delete, and tag notes by subject. |
+| **Flashcards** | Convert any note into a flashcard deck for active recall. |
+| **Revision tracker** | Track mastery levels and get suggested review schedules. |
+| **Offline‑first** | All data lives in the browser (`localStorage`). |
+| **Fast dev workflow** | Hot‑reloading powered by Vite. |
+
+---
+
+## Project structure
+
+```
+study/
+├─ public/          # static assets
+├─ src/
+│  ├─ assets/      # images / icons
+│  ├─ components/ # React components
+│  ├─ hooks/       # reusable hooks
+│  ├─ pages/        # page components
+│  ├─ utils/        # helper functions
+│  ├─ App.jsx
+│  └─ main.jsx
+├─ index.html
+└─ vite.config.js
+```
 
 ---
 
 ## Development
 
-| Command       | Purpose                                |
-|---------------|----------------------------------------|
-| `npm run dev` | Start the Vite dev server (hot‑reload) |
+| Command | Purpose |
+|---------|---------|
+| `npm run dev` | Start Vite dev server (hot‑reload) |
 | `npm run build` | Build a production bundle in `dist/` |
-| `npm run lint` | Run ESLint with the project’s rules   |
+| `npm run lint` | Run ESLint with the project’s rules |
 
 ---
 
 ## Contributing
 
-1. Fork the repository and create a feature branch (`git checkout -b feat/your-feature`).  
-2. Commit with focused messages that follow the Conventional Commit style.  
-3. Test locally with `npm run dev` and run `npm run lint` before committing.  
-4. Submit a pull request with a clear title and description; reference any related issue.  
+1. Fork the repo and create a feature branch (`git checkout -b feat/your-feature`).
+2. Commit following the [Conventional Commits](https://www.conventionalcommits.org/) style.
+3. Test locally (`npm run dev`) and lint (`npm run lint`).
+4. Open a pull request with a clear title and description. Reference any related issue.
 
-Check the open issues before starting new work.
+Feel free to browse the open issues before starting a new feature.
 
 ---
 
 ## Changelog
 
-- **2026‑08‑19** – Refined README and clarified contribution workflow.  
-- **2026‑08‑05** – Added flashcard revision feature with local persistence.  
+- **2026‑08‑19** – Improved README and clarified contribution workflow.  
+- **2026‑08‑05** – Added flashcard revision feature with local persistence.
 
 ---
 
