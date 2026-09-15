@@ -2,19 +2,20 @@
 
 > A lightweight, browser‑only React note‑taking and flashcard app that works offline.
 
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)  
-![Node.js](https://img.shields.io/badge/Node.js-18.x-brightgreen?style=flat-square&logo=node.js)  
-![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react)  
-![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)  
+![Node.js 18+](https://img.shields.io/badge/Node.js-18.x-brightgreen?style=flat-square&logo=node.js)  
+![React 18+](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react)  
+![Vite 6+](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)  
+![Lint: ESLint](https://img.shields.io/badge/ESLint-7.x-4B32C3?style=flat-square&logo=eslint)
 
-> **All data is stored in `localStorage`.** No server is required, so the app is instantly usable on any device that supports modern browsers.
+> **All data lives in the browser (`localStorage`).** No back‑end server is required, so you can start studying immediately on any modern device.
 
 ---
 
 ## Table of contents
 
+- [Getting started](#getting-started)
 - [Installation](#installation)
-- [Quick start](#quick-start)
 - [Features](#features)
 - [Project structure](#project-structure)
 - [Development](#development)
@@ -24,32 +25,32 @@
 
 ---
 
-## Installation
+## Getting started
 
 ```bash
-# 1️⃣ Clone the repo
+# 1️⃣ Clone the repository
 git clone https://github.com/shubhyagami/study.git && cd study
 
 # 2️⃣ Install dependencies
 npm install
 
-# 3️⃣ Run the development server
+# 3️⃣ Start the dev server
 npm run dev
 ```
 
-Once the server starts, open <http://localhost:5173> in your browser. No further setup is required.
+Open <http://localhost:5173> in your browser. No additional configuration is required – the app is ready to use.
 
 ---
 
 ## Features
 
-| Feature | What it does |
-|---------|--------------|
-| **Notes** | Create, edit, delete, and tag notes by subject. |
-| **Flashcards** | Convert any note into a flashcard deck for active recall. |
-| **Revision tracker** | Track mastery levels and get suggested review schedules. |
-| **Offline‑first** | All data lives in the browser (`localStorage`). |
-| **Fast dev workflow** | Hot‑reloading powered by Vite. |
+| Feature              | Description |
+|----------------------|-------------|
+| **Notes**            | Create, edit, delete, and tag notes by subject. |
+| **Flashcards**       | Turn any note into a flashcard deck for active recall. |
+| **Revision tracker** | Assign mastery levels and receive suggested review times. |
+| **Offline‑first**    | All data is stored client‑side (`localStorage`), so you can work anywhere. |
+| **Fast dev workflow**| Hot‑reloading powered by Vite. |
 
 ---
 
@@ -57,13 +58,13 @@ Once the server starts, open <http://localhost:5173> in your browser. No further
 
 ```
 study/
-├─ public/          # static assets
+├─ public/          # Static assets
 ├─ src/
-│  ├─ assets/      # images / icons
-│  ├─ components/ # React components
-│  ├─ hooks/       # reusable hooks
-│  ├─ pages/        # page components
-│  ├─ utils/        # helper functions
+│  ├─ assets/       # Images / icons
+│  ├─ components/   # UI components
+│  ├─ hooks/        # Reusable hooks
+│  ├─ pages/        # Page components
+│  ├─ utils/        # Helper functions
 │  ├─ App.jsx
 │  └─ main.jsx
 ├─ index.html
@@ -76,26 +77,26 @@ study/
 
 | Command | Purpose |
 |---------|---------|
-| `npm run dev` | Start Vite dev server (hot‑reload) |
-| `npm run build` | Build a production bundle in `dist/` |
+| `npm run dev`  | Start the Vite dev server with hot‑reload |
+| `npm run build`| Build a production bundle into `dist/` |
 | `npm run lint` | Run ESLint with the project’s rules |
 
 ---
 
 ## Contributing
 
-1. Fork the repo and create a feature branch (`git checkout -b feat/your-feature`).
-2. Commit following the [Conventional Commits](https://www.conventionalcommits.org/) style.
-3. Test locally (`npm run dev`) and lint (`npm run lint`).
-4. Open a pull request with a clear title and description. Reference any related issue.
+1. Fork the repo and create a feature branch (`git checkout -b feat/your-feature`).  
+2. Follow the [Conventional Commits](https://www.conventionalcommits.org/) style.  
+3. Test locally (`npm run dev`) and lint (`npm run lint`).  
+4. Open a pull request with a clear title and description, and reference any related issue.
 
-Feel free to browse the open issues before starting a new feature.
+Feel free to pick an issue from the “good first issue” label before starting.
 
 ---
 
 ## Changelog
 
-- **2026‑08‑19** – Improved README and clarified contribution workflow.  
+- **2026‑08‑19** – Updated the README and clarified the contribution workflow.  
 - **2026‑08‑05** – Added flashcard revision feature with local persistence.
 
 ---
