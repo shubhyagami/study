@@ -2,21 +2,21 @@
 
 > A lightweight, browser‑only React note‑taking and flashcard app that works offline.
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)  
-![Node.js 18+](https://img.shields.io/badge/Node.js-18.x-brightgreen?style=flat-square&logo=node.js)  
-![React 18+](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react)  
-![Vite 6+](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)  
+![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+![Node.js 18+](https://img.shields.io/badge/Node.js-18.x-brightgreen?style=flat-square&logo=node.js)
+![React 18+](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react)
+![Vite 6+](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)
 ![Lint: ESLint](https://img.shields.io/badge/ESLint-7.x-4B32C3?style=flat-square&logo=eslint)
 
-> **All data lives in the browser (`localStorage`).** No back‑end server is required, so you can start studying immediately on any modern device.
+All data is stored in the browser’s `localStorage`. No backend server is required, so you can start studying immediately on any modern device.
 
 ---
 
 ## Table of contents
 
 - [Getting started](#getting-started)
-- [Installation](#installation)
 - [Features](#features)
+- [Installation](#installation)
 - [Project structure](#project-structure)
 - [Development](#development)
 - [Contributing](#contributing)
@@ -28,29 +28,29 @@
 ## Getting started
 
 ```bash
-# 1️⃣ Clone the repository
+# 1️⃣ Clone the repo
 git clone https://github.com/shubhyagami/study.git && cd study
 
 # 2️⃣ Install dependencies
 npm install
 
-# 3️⃣ Start the dev server
+# 3️⃣ Run the dev server
 npm run dev
 ```
 
-Open <http://localhost:5173> in your browser. No additional configuration is required – the app is ready to use.
+Open <http://localhost:5173> in your browser. The app is ready to use right away.
 
 ---
 
 ## Features
 
-| Feature              | Description |
+| Feature              | What it does |
 |----------------------|-------------|
-| **Notes**            | Create, edit, delete, and tag notes by subject. |
-| **Flashcards**       | Turn any note into a flashcard deck for active recall. |
-| **Revision tracker** | Assign mastery levels and receive suggested review times. |
-| **Offline‑first**    | All data is stored client‑side (`localStorage`), so you can work anywhere. |
-| **Fast dev workflow**| Hot‑reloading powered by Vite. |
+| **Notes** | Create, edit, delete, and tag notes by subject. |
+| **Flashcards** | Convert any note into a flashcard deck for active recall. |
+| **Revision tracker** | Assign mastery levels and get suggested review dates. |
+| **Offline‑first** | All data lives client‑side (`localStorage`), so you can work anywhere. |
+| **Fast dev workflow** | Hot‑reload powered by Vite. |
 
 ---
 
@@ -61,10 +61,10 @@ study/
 ├─ public/          # Static assets
 ├─ src/
 │  ├─ assets/       # Images / icons
-│  ├─ components/   # UI components
-│  ├─ hooks/        # Reusable hooks
-│  ├─ pages/        # Page components
-│  ├─ utils/        # Helper functions
+│  ├─ components/   # Reusable UI components
+│  ├─ hooks/        # Custom React hooks
+│  ├─ pages/        # Top‑level pages
+│  ├─ utils/        # Utility functions
 │  ├─ App.jsx
 │  └─ main.jsx
 ├─ index.html
@@ -85,12 +85,12 @@ study/
 
 ## Contributing
 
-1. Fork the repo and create a feature branch (`git checkout -b feat/your-feature`).  
+1. Fork the repository and create a feature branch (`git checkout -b feat/your-feature`).  
 2. Follow the [Conventional Commits](https://www.conventionalcommits.org/) style.  
 3. Test locally (`npm run dev`) and lint (`npm run lint`).  
-4. Open a pull request with a clear title and description, and reference any related issue.
+4. Submit a pull request with a clear title and description, and reference any related issue.
 
-Feel free to pick an issue from the “good first issue” label before starting.
+Feel free to pick an issue labeled “good first issue”.
 
 ---
 
