@@ -1,23 +1,24 @@
+[K[2m  [2mmodel deepseek-ai/deepseek-v4.1-flash failed, trying next...[0m[0m
+[K[2m  [2mmodel openai/gpt-oss-20b failed, trying next...[0m[0m
+[K[2m  [2mmodel openai/gpt-oss-120b failed, trying next...[0m[0m
 # Study
 
-*A lightweight, browser‑only React app for taking notes and creating flashcard decks that works offline.*
+A lightweight, browser-only React application for taking notes and creating flashcard decks. Study is designed for speed and privacy, working entirely offline by utilizing the browser's `localStorage`.
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)  
-![Node.js 18.x](https://img.shields.io/badge/Node.js-18.x-brightgreen?style=flat-square&logo=node.js)  
-![React 18.x](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react)  
-![Vite 6.x](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)  
+![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+![Node.js 18.x](https://img.shields.io/badge/Node.js-18.x-brightgreen?style=flat-square&logo=node.js)
+![React 18.x](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react)
+![Vite 6.x](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite)
 ![ESLint](https://img.shields.io/badge/ESLint-7.x-4B32C3?style=flat-square&logo=eslint)
-
-Study stores everything in the browser’s `localStorage`, so you can start studying instantly on any modern device—no server or external database required.
 
 ---
 
-## Table of contents
+## Table of Contents
 
-- [Getting started](#getting-started)
 - [Features](#features)
-- [Architecture](#architecture)
+- [Getting Started](#getting-started)
 - [Development](#development)
+- [Project Structure](#project-structure)
 - [Testing](#testing)
 - [Contributing](#contributing)
 - [Changelog](#changelog)
@@ -25,102 +26,113 @@ Study stores everything in the browser’s `localStorage`, so you can start stud
 
 ---
 
-## Getting started
+## Features
+
+- **Note Management**: Create, edit, and delete notes with subject-based tagging.
+- **Active Recall**: Quickly convert any note into a flashcard deck.
+- **Revision Tracking**: Assign mastery levels to cards to generate suggested review dates.
+- **Offline-First**: No backend or database required; all data persists locally in your browser.
+- **Responsive UI**: A clean, minimal interface built with reusable components and custom hooks.
+
+---
+
+## Getting Started
 
 ### Prerequisites
 
-- Node.js 18 or newer
+- **Node.js**: 18.x or newer
+- **npm**: Installed with Node.js
 
-```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/shubhyagami/study.git && cd study
+### Installation
 
-# 2️⃣ Install dependencies
-npm install
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/shubhyagami/study.git && cd study
+   ```
 
-# 3️⃣ Start the dev server
-npm run dev
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Open <http://localhost:5173> to see the app. You can immediately add notes, tag them by subject, and create flashcard decks.
+3. Launch the development server:
+   ```bash
+   npm run dev
+   ```
 
----
-
-## Features
-
-| ✔️ | Feature | What it does |
-|----|---------|--------------|
-| | **Notes** | Create, edit, delete, and tag notes by subject. |
-| | **Flashcards** | Convert any note into an active‑recall deck. |
-| | **Revision tracker** | Assign mastery levels and get suggested review dates. |
-| | **Offline‑first** | All data is stored locally; no internet required. |
-| | **Fast dev workflow** | Hot‑reload powered by Vite. |
-| | **Clean UI** | Reusable components, custom hooks, and responsive design. |
-
----
-
-## Architecture
-
-```
-study/
-├─ public/          # Static assets (favicon, etc.)
-├─ src/
-│  ├─ assets/          # Images / icons
-│  ├─ components/      # Reusable UI components
-│  ├─ hooks/           # Custom React hooks
-│  ├─ pages/           # Top‑level pages (Notes, Flashcards, Settings)
-│  ├─ utils/           # Utility functions
-│  ├─ App.jsx
-│  └─ main.jsx
-├─ index.html
-└─ vite.config.js
-```
-
-The app is a single‑page React application bootstrapped with Vite, using standard conventions for component organization and state management.
+Once the server is running, open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
 ## Development
 
-| npm script | Purpose |
-|------------|---------|
-| `npm run dev` | Start Vite dev server with hot‑reload |
-| `npm run build` | Build a production bundle into `dist/` |
-| `npm run lint` | Run ESLint with the project’s rules |
-| `npm run format` | Format code with Prettier |
+### Available Scripts
+
+| Command | Description |
+|:--- |:--- |
+| `npm run dev` | Starts the Vite development server with hot-module replacement (HMR). |
+| `npm run build` | Builds the project for production into the `dist/` folder. |
+| `npm run lint` | Runs ESLint to check for code quality and style issues. |
+| `npm run format` | Formats the codebase using Prettier. |
+
+---
+
+## Project Structure
+
+```text
+study/
+├─ public/          # Static assets
+├─ src/
+│  ├─ assets/        # Images and icons
+│  ├─ components/    # Reusable UI components
+│  ├─ hooks/         # Custom React hooks
+│  ├─ pages/        # Page-level components (Notes, Flashcards, Settings)
+│  ├─ utils/         # Helper functions and logic
+│  ├─ App.jsx       # Root component
+│  └─ main.jsx       # Entry point
+├─ index.html       # Main HTML template
+└─ vite.config.js    # Vite configuration
+```
 
 ---
 
 ## Testing
 
-Vitest powers unit and snapshot tests.
+Unit and snapshot tests are powered by **Vitest**.
 
 ```bash
+# Run all tests
 npm run test
+
+# Run tests in watch mode
+npm run test:watch
 ```
 
-Tests live under `src/__tests__`. Run in watch mode with `npm run test:watch`.
+All test files are located in `src/__tests__`.
 
 ---
 
 ## Contributing
 
-1. Fork the repository and create a branch (`git checkout -b feat/your-feature`).  
-2. Follow the [Conventional Commits](https://www.conventionalcommits.org/) style.  
-3. Run the app locally (`npm run dev`) and lint (`npm run lint`).  
-4. Submit a pull request with a clear title, description, and reference to any related issue.
+Contributions are welcome. To get started:
 
-Feel free to pick an issue labeled “good‑first‑issue” or reach out if you need help.
+1. Fork the repository and create a feature branch: `git checkout -b feat/your-feature-name`.
+2. Ensure your code adheres to [Conventional Commits](https://www.conventionalcommits.org/).
+3. Run `npm run lint` to verify code quality.
+4. Submit a Pull Request with a clear description of the changes and references to any related issues.
+
+If you are new to the project, look for issues labeled `good-first-issue`.
 
 ---
 
 ## Changelog
 
-- **2026‑08‑19** – Updated README and clarified contribution workflow.  
-- **2026‑08‑05** – Added flashcard revision feature with local persistence.
+- **2026-09-25** – Polished README for better clarity and developer experience.
+- **2026-08-19** – Updated contribution guidelines and documentation.
+- **2026-08-05** – Implemented flashcard revision tracking and local persistence.
 
 ---
 
 ## License
 
-MIT – see the [LICENSE](LICENSE) file.
+Distributed under the MIT License. See `LICENSE` for more information.
