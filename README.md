@@ -3,7 +3,7 @@
 # Study
 
 A lightweight, browser‑only React app for taking notes and building flashcard decks.  
-It’s built for speed and privacy: all data is stored in the browser’s `localStorage`, so you can use it offline without a backend.
+All data lives in the browser’s `localStorage`, so you can use it offline and keep your information private.
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)  
 ![Node.js 18.x](https://img.shields.io/badge/Node.js-18.x-brightgreen?style=flat-square&logo=node.js)  
@@ -28,10 +28,10 @@ Open <http://localhost:5173> to see the app.
 
 ---
 
-## Table of Contents
+## Table of contents
 
 - [Features](#features)
-- [Getting Started](#getting-started)
+- [Getting started](#getting-started)
 - [Scripts](#scripts)
 - [Project structure](#project-structure)
 - [Testing](#testing)
@@ -44,32 +44,33 @@ Open <http://localhost:5173> to see the app.
 ## Features
 
 | Feature | Description |
-|---------|------------|
-| **Note Management** | Create, edit, and delete notes; tag them by subject. |
-| **Active Recall** | Turn any note into a flashcard deck in seconds. |
-| **Revision Tracking** | Assign mastery levels to cards; the app suggests the next review date. |
-| **Offline‑First** | No server, no database – everything lives in `localStorage`. |
-| **Responsive UI** | Minimal, clean design built with reusable components and hooks. |
+|---------|-------------|
+| **Note management** | Create, edit, and delete notes; tag them by subject. |
+| **Active recall** | Generate a flashcard deck from any note in seconds. |
+| **Revision tracking** | Assign mastery levels to cards and let the app suggest the next review date. |
+| **Offline‑first** | No server, no database – everything persists in `localStorage`. |
+| **Responsive UI** | Clean design built with reusable components and custom hooks. |
 
 ---
 
-## Getting Started
+## Getting started
 
 ### Prerequisites
 
-- **Node.js** 18.x or newer
-- **npm** (installed with Node.js)
+- Node.js 18.x or newer
+- npm (comes with Node)
 
-### Installation
+### Installation & development
 
 ```bash
 # Clone the repository
-git clone https://github.com/shubhyagami/study.git && cd study
+git clone https://github.com/shubhyagami/study.git
+cd study
 
 # Install dependencies
 npm install
 
-# Launch the dev server
+# Start the dev server
 npm run dev
 ```
 
@@ -81,20 +82,20 @@ The app will be available at <http://localhost:5173>.
 npm run build
 ```
 
-This generates a `dist/` folder with the production build.
+The compiled files are placed in the `dist/` folder.
 
 ---
 
 ## Scripts
 
 | Command | Description |
-|---------|--------------|
-| `npm run dev` | Starts Vite with hot‑module replacement. |
-| `npm run build` | Builds the project for production. |
-| `npm run lint` | Checks code quality with ESLint. |
-| `npm run format` | Formats the codebase with Prettier. |
-| `npm run test` | Runs all Vitest tests. |
-| `npm run test:watch` | Runs tests in watch mode. |
+|---------|-------------|
+| `npm run dev` | Start Vite with hot‑module replacement. |
+| `npm run build` | Build the project for production. |
+| `npm run lint` | Run ESLint checks. |
+| `npm run format` | Format the codebase with Prettier. |
+| `npm run test` | Run all Vitest tests. |
+| `npm run test:watch` | Run tests in watch mode. |
 
 ---
 
@@ -105,12 +106,12 @@ study/
 ├─ public/          # Static assets
 ├─ src/
 │  ├─ assets/        # Images & icons
-│  ├─ components/     # Reusable UI components
-│  ├─ hooks/          # Custom React hooks
-│  ├─ pages/          # Page‑level components (Notes, Flashcards, Settings)
-│  ├─ utils/          # Helper functions & logic
+│  ├─ components/    # Reusable UI components
+│  ├─ hooks/         # Custom React hooks
+│  ├─ pages/         # Page‑level components (Notes, Flashcards, Settings)
+│  ├─ utils/         # Helper functions & logic
 │  ├─ App.jsx         # Root component
-│  └─ main.jsx         # Entry point
+│  └─ main.jsx        # Entry point
 ├─ index.html
 └─ vite.config.js
 ```
@@ -129,40 +130,40 @@ npm run test
 npm run test:watch
 ```
 
-Test files live in `src/__tests__/`.
+Test files are located in `src/__tests__/`.
 
 ---
 
 ## Contributing
 
-We welcome contributions! Follow these steps:
+1. Fork the repo and create a feature branch
 
-1. Fork the repo and create a feature branch:
    ```bash
    git checkout -b feat/your-feature-name
    ```
-2. Write clear, concise commits that follow the [Conventional Commits](https://www.conventionalcommits.org/) style.
-3. Run the linter to ensure quality:
+
+2. Follow the [Conventional Commits](https://www.conventionalcommits.org/) style for commits.  
+3. Run the linter to ensure quality
+
    ```bash
    npm run lint
    ```
-4. Submit a pull request with a description of your changes and any related issue references.
 
-If you’re new, look for issues tagged `good-first-issue`.
+4. Submit a pull request with a clear description and any related issue references.
+
+If you’re new, check out issues tagged `good-first-issue`.
 
 ---
 
 ## Changelog
 
-- **2026‑09‑27** – Updated README, added quick‑start guide and additional badges.  
-- **2026‑09‑25** – Polished README for clarity.  
-- **2026‑08‑19** – Updated contribution guidelines and documentation.  
-- **2026‑08‑05** – Implemented flashcard revision tracking and local storage persistence.
+- **2026‑09‑27** – Updated README, added quick‑start guide and badges.  
+- **2026‑09‑25** – Tidied README for clarity.  
+- **2026‑08‑19** – Updated contribution guidelines.  
+- **2026‑08‑05** – Added flashcard revision tracking and localStorage persistence.
 
 ---
 
 ## License
 
-MIT; see [LICENSE](LICENSE) for details.
-
----
+MIT – see the [LICENSE](LICENSE) file.
